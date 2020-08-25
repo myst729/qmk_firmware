@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Planck</title>
+    <style>
+      :root {
+        --forth: 9px;
+        --gap: calc(var(--forth) * 2 / 3);
+        font-family: Menlo, Consolas, monospace;
+      }
+      .layer {
+        background-color: #000;
+        border-radius: var(--gap);
+        font-size: var(--forth);
+        padding: calc(var(--forth) * 2 / 3);
+        width: calc(48 * var(--forth) + 47 * var(--gap));
+        display: grid;
+        grid-template-columns: repeat(48, var(--forth));
+        grid-template-rows: repeat(16, var(--forth));
+        grid-gap: var(--gap);
+      }
+      .key {
+        color: #212224;
+        background-color: #efefea;
+        border-radius: var(--gap);
+        padding: calc(var(--forth) * 2 / 3);
+        grid-column: span 4;
+        grid-row: span 4;
+      }
+      .key[data-color="red"] { color: #efefea; background-color: #b01c11; }
+      .key[data-color="dark"] { color: #efefea; background-color: #575757; }
+      .key[data-style="blind"] { position: relative; }
+      .key[data-style="blind"]:after {
+        content: '';
+        border-top: 2px solid #aaa;
+        width: var(--forth);
+        position: absolute;
+        z-index: 1;
+        bottom: var(--gap);
+        left: calc((var(--forth) + var(--gap)) * 3 / 2);
+      }
+      .key[data-unit="1.25"] { grid-column: span 5; }
+      .key[data-unit="1.5"] { grid-column: span 6; }
+      .key[data-unit="1.75"] { grid-column: span 7; }
+      .key[data-unit="2"] { grid-column: span 8; }
+      .key[data-unit="2.25"] { grid-column: span 9; }
+      .key[data-unit="2.5"] { grid-column: span 10; }
+      .key[data-unit="2.75"] { grid-column: span 11; }
+      .key[data-unit="3"] { grid-column: span 12; }
+    </style>
+  </head>
+  <body>
+    <h1>Planck</h1>
+    <h2>Layer 0</h2>
+    <div class="layer">
+      <!-- Row 1 -->
+      <div class="key" data-color="red">Esc</div>
+      <div class="key">Q</div>
+      <div class="key">W</div>
+      <div class="key">E</div>
+      <div class="key">R</div>
+      <div class="key">T</div>
+      <div class="key">Y</div>
+      <div class="key">U</div>
+      <div class="key">I</div>
+      <div class="key">O</div>
+      <div class="key">P</div>
+      <div class="key" data-color="dark">BS</div>
+      <!-- Row 2 -->
+      <div class="key" data-color="dark">Tab</div>
+      <div class="key">A</div>
+      <div class="key">S</div>
+      <div class="key">D</div>
+      <div class="key" data-style="blind">F</div>
+      <div class="key">G</div>
+      <div class="key">H</div>
+      <div class="key" data-style="blind">J</div>
+      <div class="key">K</div>
+      <div class="key">L</div>
+      <div class="key">/ ?</div>
+      <div class="key" data-color="red">Enter</div>
+      <!-- Row 3 -->
+      <div class="key" data-color="dark">Shift</div>
+      <div class="key">Z</div>
+      <div class="key">X</div>
+      <div class="key">C</div>
+      <div class="key">V</div>
+      <div class="key">B</div>
+      <div class="key">N</div>
+      <div class="key">M</div>
+      <div class="key">, &lt;</div>
+      <div class="key">. &gt;</div>
+      <div class="key" data-color="dark">↑</div>
+      <div class="key" data-color="dark">Shift</div>
+      <!-- Row 4 -->
+      <div class="key" data-color="dark">Ctrl</div>
+      <div class="key" data-color="dark">Caps Lock</div>
+      <div class="key" data-color="dark">Win</div>
+      <div class="key" data-color="dark">Alt</div>
+      <div class="key" data-color="red">Fn</div>
+      <div class="key" data-unit="2">Space</div>
+      <div class="key" data-color="red">Fn2</div>
+      <div class="key" data-color="dark">Alt</div>
+      <div class="key" data-color="dark">←</div>
+      <div class="key" data-color="dark">↓</div>
+      <div class="key" data-color="dark">→</div>
+    </div>
+    <h2>Layer 1</h2>
+    <div class="layer">
+      <!-- Row 1 -->
+      <div class="key" data-color="red">` ~</div>
+      <div class="key">1 !</div>
+      <div class="key">2 @</div>
+      <div class="key">3 #</div>
+      <div class="key">4 $</div>
+      <div class="key">5 %</div>
+      <div class="key">6 ^</div>
+      <div class="key">7 &</div>
+      <div class="key">8 *</div>
+      <div class="key">9 (</div>
+      <div class="key">0 )</div>
+      <div class="key" data-color="dark">\ |</div>
+      <!-- Row 2 -->
+      <div class="key" data-color="dark">Caps Lock</div>
+      <div class="key">Insert</div>
+      <div class="key">Home</div>
+      <div class="key">Page Up</div>
+      <div class="key" data-style="blind">- _</div>
+      <div class="key">= +</div>
+      <div class="key">[ {</div>
+      <div class="key" data-style="blind">] }</div>
+      <div class="key">; :</div>
+      <div class="key">' "</div>
+      <div class="key"></div>
+      <div class="key" data-color="red"></div>
+      <!-- Row 3 -->
+      <div class="key" data-color="dark"></div>
+      <div class="key">Delete</div>
+      <div class="key">End</div>
+      <div class="key">Page Down</div>
+      <div class="key"></div>
+      <div class="key"></div>
+      <div class="key">, &lt;</div>
+      <div class="key">. &gt;</div>
+      <div class="key">/ ?</div>
+      <div class="key"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <!-- Row 4 -->
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="red"></div>
+      <div class="key" data-unit="2"></div>
+      <div class="key" data-color="red"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+    </div>
+    <h2>Layer 2</h2>
+    <div class="layer">
+      <!-- Row 1 -->
+      <div class="key" data-color="red">F1</div>
+      <div class="key">F2</div>
+      <div class="key">F3</div>
+      <div class="key">F4</div>
+      <div class="key">F5</div>
+      <div class="key">F6</div>
+      <div class="key">F7</div>
+      <div class="key">F8</div>
+      <div class="key">F9</div>
+      <div class="key">F10</div>
+      <div class="key">F11</div>
+      <div class="key" data-color="dark">F12</div>
+      <!-- Row 2 -->
+      <div class="key" data-color="dark">Backlight Toggle</div>
+      <div class="key">Backlight Breathing</div>
+      <div class="key">Backlight Step</div>
+      <div class="key"></div>
+      <div class="key" data-style="blind"></div>
+      <div class="key"></div>
+      <div class="key"></div>
+      <div class="key" data-style="blind">Bright -</div>
+      <div class="key">Bright +</div>
+      <div class="key"></div>
+      <div class="key"></div>
+      <div class="key" data-color="red"></div>
+      <!-- Row 3 -->
+      <div class="key" data-color="dark"></div>
+      <div class="key"></div>
+      <div class="key">Print Screen</div>
+      <div class="key">Scroll Lock</div>
+      <div class="key">Pause Break</div>
+      <div class="key"></div>
+      <div class="key">Mute</div>
+      <div class="key">Volume -</div>
+      <div class="key">Volume +</div>
+      <div class="key"></div>
+      <div class="key" data-color="dark">Backlight On</div>
+      <div class="key" data-color="dark"></div>
+      <!-- Row 4 -->
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="red"></div>
+      <div class="key" data-unit="2">DFU/Reset</div>
+      <div class="key" data-color="red"></div>
+      <div class="key" data-color="dark"></div>
+      <div class="key" data-color="dark">Backlight Decrease</div>
+      <div class="key" data-color="dark">Backlight Off</div>
+      <div class="key" data-color="dark">Backlight Increase</div>
+    </div>
+  </body>
+</html>
