@@ -44,5 +44,8 @@
 #define ENCODERS_PAD_B { D6 }
 
 #define TAP_CODE_DELAY 100
+#define TAPPING_TERM 200
+#define PERMISSIVE_HOLD
+#define TAPPING_FORCE_HOLD
 
 #endif
