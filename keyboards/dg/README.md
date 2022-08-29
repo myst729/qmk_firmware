@@ -23,6 +23,7 @@ All my QMK keyboard firmware.
 |  35 | [**sandbox**](sandbox)           | :package: | STM32F303 powered split keyboard.                                          |
 |  38 | [**f401**](f401)                 | :blossom: | STM32F401 test board.                                                      |
 |  39 | [**sunset**](sunset)             | :package: | STM32F303 powered 87 keyboard, with RGB key switch LEDs and underglow.     |
+|  40 | [**raspi**](raspi)               | :blossom: | Raspberry PI Pico RP2040 test board.                                       |
 
 ## Implemented features
 
