@@ -1,0 +1,23 @@
+/* ATMEGA32U4 */
+
+/* Matrix */
+#define MATRIX_ROW_PINS { NO_PIN, NO_PIN, NO_PIN }
+#define MATRIX_COL_PINS { NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
+#define MUX_CHANNELS 4
+#define MUX_CHANNEL_PINS { B0, B1, B2, B3 }
+// #define MUX_ENABLE_PINS { D0, D1, D2 }
+#define MUX_SIG_PINS { F0, F1, F4 }
+
+#ifdef DIP_SWITCH_ENABLE
+#define DIP_SWITCH_PINS { D6, D7 }
+
+// Top: 486, Bottom: 270
+#define MAGNET_THRESHOLD_LIGHT 450
+#define MAGNET_THRESHOLD_DEFAULT 400
+#define MAGNET_THRESHOLD_HEAVY 330
+#endif
+
+/* RGB Matrix */
+#ifdef RGB_MATRIX_ENABLE
+#define WS2812_DI_PIN D5
+#endif
