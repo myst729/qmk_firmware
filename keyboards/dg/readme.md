@@ -24,6 +24,7 @@ All my QMK keyboard firmware.
 |  44 | [**gamer**](gamer)               | :rainbow: | A gamepad with STM32F103C6T6A.                                             |
 |  45 | [**demo**](demo)                 | :blossom: | Interesting QMK features all-in-one.                                       |
 |  46 | [**djuke**](djuke)               | :package: | A customized game controller.                                              |
+|  47 | [**visualizer**](visualizer)     | :blossom: | Sound spectrum visualizer with MAX9814 and CMA-4544PF-W.                   |
 
 ## Implemented features
 
