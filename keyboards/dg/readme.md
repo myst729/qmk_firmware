@@ -11,7 +11,6 @@ All my QMK keyboard firmware.
 |  10 | [**think**](think)               | :rainbow: | ThinkPad Track Point on a 40% layout.                                      |
 |  12 | [**enable**](enable)             | :blossom: | Bluetooth with Raytac MDBT40 running Adafruit firmware.                    |
 |  13 | [**pixel**](pixel)               | :blossom: | LED matrix with IS31FL3731.                                                |
-|  18 | [**think84**](think84)           | :package: | Custom 84 layout with a Track Point.                                       |
 |  25 | [**djam**](djam)                 | :package: | A customized game controller.                                              |
 |  26 | [**qmkool**](qmkool)             | :blossom: | Interesting QMK features all-in-one.                                       |
 |  28 | [**charlieplex**](charlieplex)   | :blossom: | Experiment custom matrix with Charlieplex, a.k.a. round-robin.             |
@@ -22,8 +21,9 @@ All my QMK keyboard firmware.
 |  42 | [**thirty**](thirty)             | :rainbow: | A 3x10 toy with APM32/STM32 MCU.                                           |
 |  43 | [**rgb36**](rgb36)               | :blossom: | A 6x6 WS2812 RGB matrix board.                                             |
 |  44 | [**gamer**](gamer)               | :rainbow: | A gamepad with STM32F103C6T6A.                                             |
-|  45 | [**demo**](demo)                 | :blossom: | Interesting QMK features all-in-one.                                       |
+|  45 | [**tester**](tester)             | :blossom: | Interesting QMK features all-in-one.                                       |
 |  46 | [**djuke**](djuke)               | :package: | A customized game controller.                                              |
+|  47 | [**visualizer**](visualizer)     | :blossom: | Sound spectrum visualizer with MAX9814 and CMA-4544PF-W.                   |
 
 ## Implemented features
 
