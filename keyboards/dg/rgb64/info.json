@@ -1,0 +1,20 @@
+{
+    "keyboard_name": "RGB64",
+    "manufacturer": "Leo Deng",
+    "maintainer": "myst729",
+    "url": "",
+    "usb": {
+        "vid": "0xDE29",
+        "pid": "0x7343",
+        "device_version": "0.0.2"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0 },
+                { "matrix": [0, 1], "x": 1, "y": 0 },
+                { "matrix": [0, 2], "x": 2, "y": 0 }
+            ]
+        }
+    }
+}
