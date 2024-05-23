@@ -1,0 +1,52 @@
+{
+    "keyboard_name": "Demani",
+    "manufacturer": "Leo Deng",
+    "url": "",
+    "maintainer": "myst729",
+    "usb": {
+        "vid": "0xDE29",
+        "pid": "0x7349",
+        "device_version": "0.3.0"
+    },
+    "matrix_pins": {
+        "direct": [
+            ["B3", "B4", "B5", "B6"],
+            ["B7", "B8", "B9", "B10"],
+            ["A2", "A3", "A4", "A5"]
+        ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [0, 3], "x": 3, "y": 0},
+                {"matrix": [1, 0], "x": 0.5, "y": 2},
+                {"matrix": [1, 1], "x": 1.5, "y": 2},
+                {"matrix": [1, 2], "x": 2.5, "y": 2},
+                {"matrix": [2, 0], "x": 0, "y": 3},
+                {"matrix": [2, 1], "x": 1, "y": 3},
+                {"matrix": [2, 2], "x": 2, "y": 3},
+                {"matrix": [2, 3], "x": 3, "y": 3}
+            ]
+        }
+    },
+    "rgb_matrix": {
+        "animations": {
+            "breathing": true,
+            "cycle_all": true,
+            "solid_reactive_multiwide": true,
+            "solid_reactive_multinexus": true,
+            "solid_multisplash": true
+        },
+        "default": {
+            "animation": "cycle_all"
+        },
+        "driver": "ws2812",
+        "max_brightness": 100
+    },
+    "ws2812": {
+        "pin": "B13"
+    }
+}
