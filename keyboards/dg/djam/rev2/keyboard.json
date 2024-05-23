@@ -1,0 +1,65 @@
+{
+    "usb": {
+        "device_version": "0.2.0"
+    },
+    "processor": "STM32F401",
+    "bootloader": "stm32-dfu",
+    "board": "BLACKPILL_STM32_F401",
+    "matrix_pins": {
+        "direct": [
+            ["B4", "B3", "A15", "NO_PIN", "NO_PIN", "A8", "B15", "B14"],
+            ["B5", "B9", "B7", "B6", "A7", "A6", "A5", "B12"],
+            ["B8", "A2", "A3", "A4", "B0", "B1", "B10", "A1"]
+        ]
+    },
+    "rgb_matrix": {
+        "layout": [
+            {"matrix": [1,7], "x": 221, "y": 10, "flags": 4},
+            {"x": 221, "y": 37, "flags": 2},
+            {"x": 221, "y": 46, "flags": 2},
+            {"x": 221, "y": 52, "flags": 2},
+            {"matrix": [2,6], "x": 193, "y": 46, "flags": 4},
+            {"matrix": [2,5], "x": 174, "y": 46, "flags": 4},
+            {"x": 156, "y": 46, "flags": 2},
+            {"matrix": [2,4], "x": 126, "y": 46, "flags": 4},
+            {"matrix": [1,6], "x": 195, "y": 35, "flags": 4},
+            {"x": 183, "y": 35, "flags": 2},
+            {"matrix": [1,5], "x": 176, "y": 35, "flags": 4},
+            {"x": 164, "y": 35, "flags": 2},
+            {"matrix": [1,4], "x": 156, "y": 35, "flags": 4},
+            {"x": 144, "y": 35, "flags": 2},
+            {"x": 136, "y": 41, "flags": 2},
+            {"x": 120, "y": 41, "flags": 2},
+            {"x": 128, "y": 41, "flags": 2},
+            {"x": 118, "y": 46, "flags": 2},
+            {"matrix": [2,3], "x": 106, "y": 46, "flags": 4},
+            {"x": 112, "y": 41, "flags": 2},
+            {"x": 104, "y": 41, "flags": 2},
+            {"x": 96, "y": 41, "flags": 2},
+            {"x": 88, "y": 41, "flags": 2},
+            {"x": 80, "y": 35, "flags": 2},
+            {"matrix": [1,3], "x": 68, "y": 35, "flags": 4},
+            {"x": 60, "y": 35, "flags": 2},
+            {"matrix": [1,2], "x": 48, "y": 35, "flags": 4},
+            {"x": 41, "y": 35, "flags": 2},
+            {"matrix": [1,1], "x": 29, "y": 35, "flags": 4},
+            {"matrix": [2,2], "x": 98, "y": 46, "flags": 4},
+            {"x": 68, "y": 46, "flags": 2},
+            {"matrix": [2,1], "x": 50, "y": 46, "flags": 4},
+            {"matrix": [2,0], "x": 39, "y": 46, "flags": 4},
+            {"x": 3, "y": 52, "flags": 2},
+            {"x": 3, "y": 46, "flags": 2},
+            {"x": 3, "y": 37, "flags": 2},
+            {"matrix": [1,0], "x": 3, "y": 10, "flags": 4},
+            {"x": 59, "y": 60, "flags": 2},
+            {"x": 165, "y": 60, "flags": 2}
+        ],
+        "max_brightness": 100
+    },
+    "ws2812": {
+        "pin": "B13"
+    },
+    "backlight": {
+        "pin": "C13"
+    }
+}
