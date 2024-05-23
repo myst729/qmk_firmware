@@ -1,0 +1,19 @@
+{
+  "usb": {
+    "device_version": "0.0.1"
+  },
+  "matrix_pins": {
+    "cols": ["C7", "C6", "B6", "B5", "B4", "D7", "D6", "D4"],
+    "rows": ["F0", "F1", "F4"]
+  },
+  "diode_direction": "COL2ROW",
+  "rgb_matrix": {
+    "max_brightness": 200
+  },
+  "ws2812": {
+    "pin": "D5"
+  },
+  "backlight": {
+    "pin": "B7"
+  }
+}
