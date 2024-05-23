@@ -1,0 +1,23 @@
+MCU = atmega32u2
+F_CPU = 16000000
+F_USB = $(F_CPU)
+ARCH = AVR8
+BOOTLOADER = atmel-dfu
+
+# Build options
+BOOTMAGIC_ENABLE = yes
+MOUSEKEY_ENABLE = yes
+EXTRAKEY_ENABLE = yes
+CONSOLE_ENABLE = no
+COMMAND_ENABLE = no
+NKRO_ENABLE = yes
+BACKLIGHT_ENABLE = yes
+BACKLIGHT_DRIVER = pwm
+RGBLIGHT_ENABLE = no
+ENCODER_ENABLE = yes
+CUSTOM_MATRIX = lite
+VIA_ENABLE = yes
+# LTO_ENABLE = yes
+
+# Custom matrix
+SRC += matrix.c
