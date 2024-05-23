@@ -1,0 +1,24 @@
+{
+  "usb": {
+    "device_version": "0.2.0"
+  },
+  "processor": "STM32F401",
+  "bootloader": "stm32-dfu",
+  "board": "BLACKPILL_STM32_F401",
+  "matrix_pins": {
+    "direct": [
+      ["B4", "B3", "A15", "NO_PIN", "NO_PIN", "A8", "B15", "B14"],
+      ["B5", "B9", "B7", "B6", "A7", "A6", "A5", "B12"],
+      ["B8", "A2", "A3", "A4", "B0", "B1", "B10", "A1"]
+    ]
+  },
+  "rgb_matrix": {
+    "max_brightness": 100
+  },
+  "ws2812": {
+    "pin": "B13"
+  },
+  "backlight": {
+    "pin": "C13"
+  }
+}
