@@ -1,0 +1,16 @@
+{
+  "name": "Raspico",
+  "vendorId": "0xDE29",
+  "productId": "0x7340",
+  "keycodes": ["qmk_lighting"],
+  "menus": ["qmk_rgb_matrix"],
+  "matrix": {
+    "rows": 1,
+    "cols": 4
+  },
+  "layouts": {
+    "keymap": [
+      ["0,0", "0,1", "0,2", "0,3"]
+    ]
+  }
+}
